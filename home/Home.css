@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    background-color: #f4f4f4;
+}
+
+#heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3498db;
+    padding: 20px;
+    color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: #2980b9;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+}
+
+#nav li {
+    margin: 0 20px;
+}
+
+#nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#nav a:hover {
+    background-color: #1c6ca1;
+    color: white;
+}
+
+#container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    height: calc(100vh - 140px);
+}
+
+.sidebar {
+    background-color: #3498db;
+    padding: 20px;
+    width: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.sidebar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#content {
+    flex: 1;
+    padding: 20px;
+}
+
+.searchBar {
+    margin-bottom: 20px;
+}
+
+.featured-books, .testimonial-item {
+    display: flex;
+    justify-content: space-around;
+}
+
+#recent-read {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+#recent-read h5 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.recent-reads {
+    display: flex;
+    justify-content: space-around;
+}
+
+.recent-reads .book-item {
+    text-align: center;
+    margin: 10px;
+    width: 150px;
+}
+
+.recent-reads .book-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.recent-reads .book-item button {
+    margin-top: 10px;
+}
+
+
+.book-item img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#new-release img {
+    border-radius: 10px;
+}
+
+.rating {
+    color: gold;
+}
+
+#testimonials {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.testimonial-item {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.imgnew{
+    height: 250px;
+    width: 200px;
+    margin-left: 75px;
+}
+.carousel-item{
+    background-color: #dee5e9;
+    border-radius: 15px;
+
+}
+.carousel-item h5 {
+    color: red;
+}
+.carousel-item p {
+    color: red;
+}

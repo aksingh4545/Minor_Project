@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <header>
+        <div id="heading">
+            <h1>Library Management</h1>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Context</a></li>
+                <li><a href="#">Course</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div id="side">
+                <img id="actor" src="actor.jpg" alt="Profile Picture">
+                <h4 class="identity">Ritik Roshan</h4>
+                <h6 class="designation">CSE-B</h6>
+            </div>
+            <div>
+                <h4>My <br>Library Board</h4>
+                <h5><i class="bi bi-collection"></i> Collection</h5>
+                <h5><i class="bi bi-bookmark"></i> Saved</h5>
+                <h5><i class="bi bi-person-circle"></i> Profile</h5>
+                <h5><i class="bi bi-box-arrow-right"></i> Logout</h5>
+            </div>
+            <img id="college" src="sistec.png" alt="College Logo">
+        </div>
+
+        <!-- Main Content Area -->
+        <main id="content">
+            <!-- Search Section with Filters -->
+            <div class="searchBar">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search for books..." aria-label="Search" aria-describedby="button-addon2">
+                    <button class="btn btn-primary" type="button" id="button-addon2">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+                <div class="filter-options">
+                    <select class="form-select" aria-label="Search filter">
+                        <option selected>Filter By</option>
+                        <option value="1">Title</option>
+                        <option value="2">Author</option>
+                        <option value="3">Genre</option>
+                        <option value="4">Rating</option>
+                    </select>
+                </div>
+            </div>
+             
+              <!-- Recent Read Section -->
+<section id="recent-read">
+    <h5>Recent Reads</h5>
+    <div class="recent-reads">
+        <div class="book-item">
+            <img src="muniprem.webp" alt="Recent Read 1">
+            <h5>Godan</h5>
+            <p>by Munshi Premchand</p>
+            <button class="btn btn-success">Continue Reading</button>
+        </div>
+        <div class="book-item">
+            <img src="muniprem.webp" alt="Recent Read 2">
+            <h5>Kaphan</h5>
+            <p>by Munshi Premchand</p>
+            <button class="btn btn-success">Continue Reading</button>
+        </div>
+        <div class="book-item">
+            <img src="muniprem.webp" alt="Recent Read 3">
+            <h5>Idgan</h5>
+            <p>by Munshi Premchand</p>
+            <button class="btn btn-success">Continue Reading</button>
+        </div>
+    </div>
+</section>
+
+            <!-- Featured Books Section -->
+            <section id="featured-books">
+                <h5>Featured Books</h5>
+                <div class="featured-books">
+                    <div class="book-item">
+                        <img src="muniprem.webp" alt="Featured Book 1">
+                        <h5>Godan</h5>
+                        <p>Munshi Premchand</p>
+                        <p class="rating">★★★★☆</p>
+                        <button class="btn btn-info">View</button>
+                    </div>
+                    <div class="book-item">
+                        <img src="muniprem.webp" alt="Featured Book 2">
+                        <h5>abc</h5>
+                        <p>by Munshi Premchand</p>
+                        <p class="rating">★★★★★</p>
+                        <button class="btn btn-info">View</button>
+                    </div>
+                    <div class="book-item">
+                        <img src="muniprem.webp" alt="Featured Book 3">
+                        <h5>1984</h5>
+                        <p>by Munshi Premchand</p>
+                        <p class="rating">★★★★☆</p>
+                        <button class="btn btn-info">View</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- New Releases Section (Carousel) -->
+            <section id="new-release">
+                <h5>New Release</h5>
+                <div id="newReleaseCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img  class="imgnew" src="muniprem.webp" class="d-block w-100" alt="New Release 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>XYZ</h5>
+                                <p>by Munshi Premchand</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="imgnew" src="muniprem.webp" class="d-block w-100" alt="New Release 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>XZY</h5>
+                                <p>by Munshi Premchand</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="imgnew"src="muniprem.webp" class="d-block w-100" alt="New Release 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>XYZ</h5>
+                                <p>by Munshi Premchand</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#newReleaseCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#newReleaseCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section id="testimonials">
+                <h5>What Our Readers Say</h5>
+                <div class="testimonial-item">
+                    <p>"This library has the best collection of fiction I've ever seen. It keeps me coming back!"</p>
+                    <p>- ABC</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"I found all the books I needed for my studies. This is the best resource for students."</p>
+                    <p>- ABC</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
