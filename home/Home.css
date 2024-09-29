@@ -3,11 +3,72 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    position: relative;
+    min-height: 100vh; /* Use min-height instead of height */
     background-color: #f4f4f4;
 }
+/* footer  */
+.wrapper {
+    flex: 1; /* Allow this wrapper to take the remaining space */
+    display: flex;
+    flex-direction: column; /* Ensure children are stacked vertically */
+}
 
+footer {
+    background-color: #3498db; /* Add a background color for visibility */
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Adjust the content area height */
+#container {
+    display: flex;
+    flex: 1; /* This allows the content area to grow */
+    padding: 20px;
+}
+
+
+.modal-subscription {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background semi-transparent */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's on top of other elements */
+}
+
+.modal-content-subscription {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    z-index: 10000;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover, .close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Blur effect for background */
+.blurred-background {
+    filter: blur(5px);
+}
+/* end */
 #heading {
     display: flex;
     align-items: center;
@@ -57,6 +118,7 @@ body {
     background-color: #3498db;
     padding: 20px;
     width: 250px;
+    height: 575px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -162,3 +224,71 @@ body {
 .carousel-item p {
     color: red;
 }
+/* premium model */
+
+/* Floating Purchase Premium Button */
+.purchase-premium {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000; /* Ensure it's on top of other elements */
+}
+
+.btn-premium {
+    background-color: #f1c40f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-premium img {
+    margin-right: 10px;
+}
+
+.btn-premium:hover {
+    background-color: #e2b007;
+}
+/* view */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* footer  */

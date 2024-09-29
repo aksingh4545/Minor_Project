@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Home.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            padding: 20px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .book-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+        .book-item img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .book-details {
+            display: flex;
+            align-items: center;
+        }
+        .fine-details {
+            margin-top: 20px;
+            background-color: #ffdddd; /* Red background for fine details */
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .payment-section {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #e0f7fa; /* Light blue background */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="text-center bg-primary text-white p-3">My Library</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Fine Details Section -->
+        <div class="fine-details">
+            <h2>Fine Details</h2>
+            <p><strong>Total Fine:</strong> <span style="font-weight: bold;">$5.00</span></p>
+            <p><strong>Outstanding Fines:</strong></p>
+            <ul>
+                <li>Book Title 3: <span style="font-weight: bold;">$2.00</span></li>
+                <li>Book Title 4: <span style="font-weight: bold;">$3.00</span></li>
+            </ul>
+        </div>
+
+        <!-- Payment Section -->
+        <div class="payment-section">
+            <h2>Pay Fines</h2>
+            <form id="payment-form">
+                <div class="mb-3">
+                    <label for="payment-amount" class="form-label">Amount to Pay:</label>
+                    <input type="number" class="form-control" id="payment-amount" placeholder="Enter amount" required>
+                </div>
+                <button type="submit" class="btn btn-success">Pay Now</button>
+            </form>
+        </div>
+
+        <!-- Borrowed Books Section -->
+        <section id="borrowed-books" style="margin-top: 40px;">
+            <h2>Borrowed Books</h2>
+            <div class="book-item">
+                <div class="book-details">
+                    <img src="book-cover3.jpg" alt="Book Cover">
+                    <div>
+                        <h5>Book Title 3</h5>
+                        <p>by Author Name</p>
+                        <p><strong>Due Date:</strong> 2024-10-15</p>
+                    </div>
+                </div>
+            </div>
+            <div class="book-item">
+                <div class="book-details">
+                    <img src="book-cover4.jpg" alt="Book Cover">
+                    <div>
+                        <h5>Book Title 4</h5>
+                        <p>by Author Name</p>
+                        <p><strong>Due Date:</strong> 2024-10-20</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more borrowed books as needed -->
+        </section>
+
+        <!-- Saved Books Section -->
+        <section id="saved-books" style="margin-top: 40px;">
+            <h2>Saved Books</h2>
+            <div class="book-item">
+                <div class="book-details">
+                    <img src="book-cover1.jpg" alt="Book Cover">
+                    <div>
+                        <h5>Book Title 1</h5>
+                        <p>by Author Name</p>
+                    </div>
+                </div>
+            </div>
+            <div class="book-item">
+                <div class="book-details">
+                    <img src="book-cover2.jpg" alt="Book Cover">
+                    <div>
+                        <h5>Book Title 2</h5>
+                        <p>by Author Name</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more saved books as needed -->
+        </section>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
